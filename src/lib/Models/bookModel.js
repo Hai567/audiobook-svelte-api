@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 let Schema = mongoose.Schema;
 
-let audioBooksSchema = Schema({
+let audioBooksSchema = new Schema({
     title: String,
     author: String,
     narrator: String,

@@ -1,8 +1,8 @@
 import { json } from "@sveltejs/kit"
-import { connectMongooseDb } from "../../../lib/connectMongoose"
-import { audioBooks } from "../../../lib/Models/bookModel"
-export const GET = async function(){ 
-    await connectMongooseDb()
+import { connectMongooseDb } from "$lib/connectMongoose"
+import { audioBooks } from "$lib/Models/bookModel"
+export const POST = async function(){ 
+    // await connectMongooseDb()
     let returnJsonForm
     try {
         let books = await audioBooks.find()

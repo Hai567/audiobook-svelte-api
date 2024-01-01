@@ -2,7 +2,7 @@ import { connectMongooseDb } from "$lib/connectMongoose.js"
 import { audioBooks } from "$lib/Models/bookModel"
 import { json } from "@sveltejs/kit"
 
-export const GET = async ({params}) => {
+export const POST = async ({params}) => {
     let bookId = params.bookId
     let returnJsonForm
     try {
